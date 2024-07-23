@@ -44,6 +44,7 @@ const EditorPage = () => {
                       console.log(`${username} joined`);
                   }
                   setClients(clients);
+                  console.log(clients)
                   socketRef.current.emit(ACTIONS.SYNC_CODE, {
                       code: codeRef.current,
                       socketId,
